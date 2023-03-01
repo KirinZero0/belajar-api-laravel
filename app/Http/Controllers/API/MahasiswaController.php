@@ -141,7 +141,7 @@ class MahasiswaController extends Controller
         try {
             $mahasiswa = Mahasiswa::findOrFail($id);
 
-        $data = $mahasiswa->delete();
+            $data = $mahasiswa->delete();
 
             if($data){
                 return ApiFormatter::createApi(200,'Success Delete');
